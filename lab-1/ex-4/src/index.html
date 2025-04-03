@@ -1,0 +1,140 @@
+<!-- @author Stanisław Polak <polak@agh.edu.pl> -->
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tailwind JS -->
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Hotel "Student"</title>
+  </head>
+  <body>
+    <header class="bg-sky-200 flex justify-between items-center p-4">
+      <h1 class="text-2xl">Hotel "Student"</h1>
+      <nav class="flex gap-x-4 text-gray-500 text-xl items-center">
+        <div
+          class="md:hidden md:opacity-0 text-3xl p-2 border-1 rounded-md border-gray-300"
+        >
+          <button
+            class="peer inline-flex items-center focus:text-black"
+            type="button"
+          >
+            <i class="fa-solid fa-bars md:hidden md:opacity-0 text-3xl"></i>
+          </button>
+          <ul
+            class="absolute right-4 mt-2 max-w-44 bg-white border border-gray-300 invisible opacity-0 peer-focus:visible peer-focus:opacity-100 transition-opacity duration-200"
+          >
+            <li class="p-4 border-b border-gray-300 hover:bg-gray-100 text-center">Oferta</li>
+            <li class="p-4 hover:bg-gray-100 text-center">Zarezerwuj</li>
+          </ul>
+        </div>
+        <div class="relative hidden opacity-0 md:block md:opacity-100">
+          <button
+            class="peer inline-flex items-center focus:text-black"
+            type="button"
+          >
+            <h3>Oferta</h3>
+            <i class="fa-solid fa-caret-down ml-2"></i>
+          </button>
+          <ul
+            class="absolute left-0 mt-2 max-w-40 bg-white border border-gray-300 rounded-md invisible opacity-0 peer-focus:visible peer-focus:opacity-100 transition-opacity duration-200"
+          >
+            <li class="p-2 border-b-2 hover:bg-gray-100 text-center">Pokoje</li>
+            <li class="p-2 hover:bg-gray-100 text-center">Restauracja</li>
+          </ul>
+        </div>
+        <button
+          class="focus:text-black hidden opacity-0 md:block md:opacity-100"
+        >
+          <h3>Zarezerwuj</h3>
+        </button>
+      </nav>
+    </header>
+    <main class="flex flex-col lg:flex-row m-4 h-screen gap-x-4 ">
+      <div
+        class="flex flex-col w-full lg:max-w-64 h-fit my-auto"
+      >
+        <img class="w-full rounded-t-lg" src="../media/pokoj-1.jpg" alt="" />
+        <div class="flex flex-col p-4 pt-2 border rounded-b-md border-gray-300 ">
+          <h3 class="text-xl font-semibold mb-2">Ceny noclegu</h3>
+          <ul class="pl-6 list-disc">
+            <li>Pokój 1-osobowy - 100 zł.</li>
+            <li>Pokój 2-osobowy - 90 zł.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col justify-between">
+        <div class="flex flex-col w-full lg:max-w-64">
+          <img class="w-full rounded-t-lg" src="../media/krakow.jpg" alt="" />
+          <div class="flex flex-col p-4 pt-2 items-start border rounded-b-md border-gray-300 ">
+            <h3 class="text-xl font-semibold mb-2">Dostępne terminy</h3>
+            <table class="table-fixed w-full">
+              <tr class="bg-black text-white p-2">
+                <th class="p-2 text-start">Miesiąc</th>
+                <th class="p-2 text-start">Dni</th>
+              </tr>
+              <tr class="border-b-2">
+                <td>VII</td>
+                <td>14-21, 30-31</td>
+              </tr>
+              <tr class="border-b-2">
+                <td>VIII</td>
+                <td>1-12</td>
+              </tr>
+            </table>
+            <button
+              class="border-2 rounded-md text-white bg-sky-500 mt-4 mb-4 pt-2 pb-2 pl-3 pr-3 hover:text-black focus:text-black"
+            >
+              Zarezerwuj
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col border rounded-md border-gray-300  w-full lg:max-w-64 p-4 pt-2 ">
+          <h3 class="text-xl font-semibold mb-2">Atrakcje miasta</h3>
+          <iframe
+            class="w-full aspect-video "
+            src="https://www.youtube.com/embed/Swd3OsoYRIw"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col w-full lg:max-w-64 h-fit my-auto"
+      >
+        <img class="w-full rounded-t-md" src="../media/hotel.jpg" alt="Zdjęcie hotelu" />
+        <div class="flex flex-col p-4 pt-2 border rounded-b-md border-gray-300 ">
+          <h3 class="text-xl font-semibold mb-2">Adres</h3>
+          <p>ul. Popiełuszki 1234</p>
+          <p>30-898 Kraków</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="fixed bottom-0 lg:static bg-sky-200 text-right pr-3 w-full">
+        ©Hotel Studencki
+      </div>
+      <div class="invisible lg:visible flex mb-4">
+        <a
+          class="basis-1/2 pl-16 underline text-blue-800"
+          href="phoneto:123456789"
+          >+48 123 456 789</a
+        >
+        <a
+          class="basis-1/2 pl-16 underline text-blue-800"
+          href="mailto:recpcja@studencki.pl"
+          >recpecja@studencki.pl</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

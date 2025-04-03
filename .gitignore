@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
+
+# VS Code
+.vscode/
+*.suo
+*.njsproj
+*.sln
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store # macOS
+
+# Build catalogs
+dist/
+build/
+out/
+.rpt

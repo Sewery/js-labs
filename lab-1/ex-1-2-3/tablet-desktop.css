@@ -1,0 +1,28 @@
+body{
+    font-size: large;
+    margin: 8px;
+  }
+  h1{
+    font-size:xx-large;
+  }
+  h2{
+    font-size:x-large;
+  }
+  h3{
+    font-size:larger;
+  }
+  nav{
+    justify-content: flex-start;
+  }
+  .section-box{
+    min-width: auto;
+  }
+  .container{
+    flex-direction: row;
+  }
+  .container div {
+    width: 45%;
+  }
+  .container-left {
+    width: 45%;
+  }

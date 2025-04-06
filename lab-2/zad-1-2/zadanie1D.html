@@ -4,27 +4,19 @@
 <html lang="pl">
   <head>
     <title>Plik 'zadanie1D.html'</title>
+    <script src="./zadanie1.js"></script>
   </head>
-  <body>
+  <body onload="set_up_form()">
     <h1>Plik 'zadanie1D.html'</h1>
-    <script>
-       window.prompt("Tekst1","Tekst2");
-       const ex4 = ()=>{
-          for(i=0;i<4;i++){
-            let war = window.prompt("Wczytuje","Wpisz");
-            console.log(`${war}:${typeof(war)}`)
-          }
-       };
-       ex4();
-    </script>
-     <form onInput="wynik.value = pole_tekstowe.value + pole_liczbowe.value">
+    <script>script_begin()</script>
+     <form>
       <input id="pole_tekstowe" type="text" placeholder="Wprowadź tekst">
       +
       <input id="pole_liczbowe" type="number" placeholder="Wprowadź liczbę">    
       =
       <output name="wynik" for="pole_tekstowe pole_liczbowe">Tu pojawi się wynik obliczeń</output>    
       <br>    
-      <input type="button" value="Wypisz">
+      <input type="button" value="Wypisz" onclick="funkcja_zwrotna()">
     </form>
   </body>
 </html>

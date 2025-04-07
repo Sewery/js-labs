@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="border rounded-md border-gray-300 p-4 w-fit">
+      <form action="" class="flex flex-col items-center justify-center">
+        <input
+          id="inp"
+          type="text"
+          placeholder="imie,nazwisko,numer pokoju,ilosc miejsc"
+          class="outline outline-sky-200 focus:outline-sky-800 w-[24rem] invalid:outline-pink-500 invalid:text-pink-600 "
+        />
+
+        <output id="out"></output>
+        <div class="mt-2">
+          <input
+            type="button"
+            class="border rounded-md border-gray-300 py-2 px-4 m-2 bg-zinc-100 hover:bg-zinc-200 focus:bg-zinc-300"
+            value="Dodaj"
+            onclick="addReservation()"
+          />
+          <input
+            type="button"
+            class="border rounded-md border-gray-300 py-2 px-4 m-2 bg-zinc-100 hover:bg-zinc-200 focus:bg-zinc-300"
+            value="Usun"
+            onclick="deleteReservation()"
+          />
+          <input
+            type="button"
+            class="border rounded-md border-gray-300 py-2 px-4 m-2 bg-zinc-100 hover:bg-zinc-200 focus:bg-zinc-300"
+            value="Wyświetl"
+            onclick="viewReservation()"
+          />
+          <output name="wynik"></output>
+        </div>
+      </form>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>

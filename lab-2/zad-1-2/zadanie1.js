@@ -9,7 +9,6 @@ function script_begin(){
     })();
 }
 function funkcja_zwrotna(){
-    console.log('xd')
     const poleTesktoweElement = document.forms[0].elements['pole_tekstowe'];
     console.log(`${poleTesktoweElement.value}:${typeof(poleTesktoweElement.value)}`)
     const poleLiczboweElement = document.forms[0].elements['pole_liczbowe'];
@@ -24,7 +23,7 @@ function set_up_form(){
         "input",
         ()=>{
             out.value=sum_strings_numbers(pole_tekstowe.value, pole_liczbowe.value)
-            console.log('xd'+sum_strings_numbers(pole_tekstowe.value , pole_liczbowe.value))
+            console.log(sum_strings_numbers(pole_tekstowe.value , pole_liczbowe.value))
         })
 }    
 

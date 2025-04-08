@@ -32,9 +32,8 @@ const paint= ()=>{
     ctx.setLineDash([]);
     ctx.strokeStyle = "black"
     ctx.fillRect(130, 120, 30, 140) 
-    ctx.strokeRect(130, 120, 30, 140);// x, y, szerokość, wysokość
+    ctx.strokeRect(130, 120, 30, 140);
    
-       // Kształt łuku - zamknięty, dwie krzywe Béziera (zewnętrzna i wewnętrzna)
     ctx.beginPath();
     ctx.moveTo(120, 100); // punkt początkowy zewnętrznej krawędzi
     ctx.bezierCurveTo(200, 100, 240, 160, 220, 300);
@@ -47,10 +46,4 @@ const paint= ()=>{
     ctx.fill();
 
 }
-// window.addEventListener('resize',()=>{
-//     setCanvasDimensions()
-//     paint()
-// })
-
-// setCanvasDimensions()
 paint()

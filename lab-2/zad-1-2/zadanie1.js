@@ -29,13 +29,9 @@ function set_up_form(){
 
 function sum_strings_numbers(a,b) {
     let sum =0
-    a.split("").forEach((el)=>{
-        if(!isNaN(parseInt(el)))
-            sum+=parseInt(el)
-    });
-    b.split("").forEach((el)=>{
-        if(!isNaN(parseInt(el)))
-            sum+=parseInt(el)
-    });
+    if(!isNaN(parseInt(a)))
+        sum+=parseInt(a)
+    if(!isNaN(parseInt(b)))
+        sum+=parseInt(b)
     return sum
 }
